@@ -172,6 +172,8 @@ const Post = () => {
                             <tr>
                                 <th className="px-6 py-4 text-left">#</th>
                                 <th className="px-6 py-4 text-left">Name</th>
+                                <th className="px-6 py-4 text-left">Category</th>
+                                <th className="px-6 py-4 text-left">Sub Category</th>
                                 <th className="px-6 py-4 text-left">Price</th>
                                 <th className="px-6 py-4 text-left">Post</th>
                                 <th className="px-6 py-4 text-center">Action</th>
@@ -193,6 +195,8 @@ const Post = () => {
                                         </td>
 
                                         <td className="px-6 py-4 text-left">{post.name}</td>
+                                        <td className="px-6 py-4 text-left">{post.category}</td>
+                                        <td className="px-6 py-4 text-left">{post.sub_category}</td>
                                         <td className="px-6 py-4 text-left">₹{post.price}</td>
 
                                         <td className="px-6 py-4 text-left">
@@ -208,7 +212,7 @@ const Post = () => {
 
                                                 <Link
                                                     to={`/edit-post/${post.id}`}
-                                                    className="rounded bg-yellow-100 p-2 text-yellow-600"
+                                                    className="rounded bg-yellow-100 p-2 text-yellow-600 inline-flex items-center justify-center"
                                                 >
                                                     <SquarePen size={18} />
                                                 </Link>

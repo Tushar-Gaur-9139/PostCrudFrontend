@@ -283,7 +283,7 @@ const CreatePost = () => {
                     <div className="flex flex-col-reverse gap-3 sm:flex-row sm:justify-end pt-4">
                         <button
                             type="button"
-                            onClick={() => navigate("/")} // Cancel par bhi home page bhejne ke liye
+                            onClick={() => navigate("/")}
                             className="rounded-lg border border-gray-300 px-6 py-2 font-medium text-gray-700 hover:bg-gray-100"
                         >
                             Cancel
